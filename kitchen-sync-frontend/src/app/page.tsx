@@ -1,22 +1,14 @@
 'use client'
 
-
-import { useAuth0 } from '@auth0/auth0-react'
 import { RecipeSection } from '@/components/recipes/RecipeSection'
 import HeroSection from '@/components/hero/heroSection'
 import { TestimonialSection } from '@/components/testimonials/Testimonials'
-import { PricingSection } from '@/components/pricing/PricingSection'
 import { Features } from '@/components/features/Features'
 import Planning from '@/components/planning/Planning'
-import { SignUp } from '@/components/signup/Signup'
-
+/* import { SignUp } from '@/components/signup/Signup'
+ */
 
 export default function LandingPage() {
-  const { loginWithRedirect } = useAuth0()
-
-  const handleGetStarted = () => {
-    loginWithRedirect()
-  }
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -34,8 +26,6 @@ export default function LandingPage() {
         </div>
       </section>
       <TestimonialSection />
-      <PricingSection />
-      <SignUp onSignUp={handleGetStarted} />
     </div>
   )
 }

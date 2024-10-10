@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { DragDropContext, Droppable, Draggable, DropResult, DraggableProvided } from 'react-beautiful-dnd'

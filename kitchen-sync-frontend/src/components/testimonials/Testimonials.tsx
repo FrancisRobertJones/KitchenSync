@@ -1,3 +1,4 @@
+'use client'
 import { ScrollArea } from "@radix-ui/react-scroll-area"
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar"
