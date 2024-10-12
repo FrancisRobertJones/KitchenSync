@@ -2,8 +2,8 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Button } from "@/components/ui/button"
 import { ChefHat, Calendar, Sparkles, ForkKnifeCrossed } from 'lucide-react'
+import LoginButton from '../auth/AuthButtons'
 
 export default function HeroSection() {
   return (
@@ -60,11 +60,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Button
-            className="bg-black hover:bg-gray-200 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300"
-          >
-            Sign Up for Free with Google
-          </Button>
+          <LoginButton />          
         </motion.div>
       </div>
     </div>
